@@ -1,0 +1,131 @@
+<!DOCTYPE html> <!--Le dice al navegador que es una página HTML-->
+<html lang="es"> <!--La página está en español-->
+
+<head>
+    <meta charset="UTF-8"> <!--Permite usar acentos y caracteres especiales-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Permite usar acentos y caracteres especiales-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Hace que la página se vea bien en móviles-->
+    <title>CSS Selectors</title> <!-- este es el titulo de la pagina-->
+
+    <!-- Regla 1: Utilizar el selector universal * para cambiar el tipo de fuente del documento -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800;900&display=swap" rel="stylesheet"><!--Google Fonts para Regla 1, he utilizado 'Open Sans'-->
+
+    <link rel="icon" type="image/svg" href="./img/house-solid-full.svg"> <!--Font Awesome para añadir un icono de página -->
+    <link rel="stylesheet" href="./css/estilo.css"> <!--este es el enlace que vincula con la pagina de CSS-->
+</head>
+
+<body><!-- Regla 2: El elemento body tendrá margen 0 y relleno de 20% únicamente a la derecha y izquierda -->
+
+    <!-- Regla 3: Los elementos h1 estarán subrayados (text-decoration: underline;), de color darkcyan y alineados al centro -->
+    <h1>CSS Selectors</h1><!-- Título de la página -->
+    <p>A CSS selector selects the HTML element(s) you want to style.</p>
+
+    <!-- Regla 5: Los elementos con clase selectors tendrán un relleno de 5%, un border: solid darkcyan 1px; y esquinas redondeadas border-radius con valor de 5px -->
+    <div class="selectors">
+        <h2>CSS Selectors</h2>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <p>We can divide CSS selectors into five categories:</p>
+        <ul>
+            <!-- Regla 9: Los elementos a que sean hijos directos de algún li tendrán text-decoration: none -->
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li><a href="https://www.w3schools.com/css/css_combinators.asp">Combinator selectors</a> (select elements based on a specific relationship between them)</li>
+            <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo-class selectors</a> (select elements based on a certain state)</li>
+            <li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">Pseudo-elements selectors</a> (select and style a part of an element)</li>
+            <li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp">Attribute selectors</a> (select elements based on an attribute or attribute value)</li>
+        </ul>
+    </div>
+
+    <hr>
+    <!-- Regla 8: Los elementos span tendrán font-weight: 900; color de fondo negro y color de texto blanco -->
+    <!-- Regla 4: Los elementos con clase selector tendrán color lightcyan -->
+    <h2 class="selector">The CSS <span>element</span> Selector</h2><!-- Regla 7: Los elementos h2 con clase selector y los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas con valor de 5px -->
+    <p>The element selector selects HTML elements based on the element <span>name</span> (body, p, h1, h5, a, div, etc.).</p>
+    <hr>
+
+    <!-- Regla 8: Los elementos span tendrán font-weight: 900; color de fondo negro y color de texto blanco -->
+    <!-- Regla 4: Los elementos con clase selector tendrán color lightcyan -->
+    <h2 class="selector">The CSS <span>id</span> Selector</h2><!-- Regla 7: Los elementos h2 con clase selector y los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas con valor de 5px -->
+    <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+    <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+    <p>To select an element with a specific id, write a hash <span>(#)</span> character, followed by the id of the element.</p>
+    <hr>
+
+    <!-- Regla 8: Los elementos span tendrán font-weight: 900; color de fondo negro y color de texto blanco -->
+    <!-- Regla 4: Los elementos con clase selector tendrán color lightcyan -->
+    <h2 class="selector">The CSS <span>class</span> Selector</h2> <!-- Regla 7: Los elementos h2 con clase selector y los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas con valor de 5px -->
+    <p>The class selector selects HTML elements with a specific class attribute.</p>
+    <p>To select elements with a specific class, write a period <span>(.)</span> character, followed by the class name.</p>
+    <hr>
+
+    <!-- Regla 8: Los elementos span tendrán font-weight: 900; color de fondo negro y color de texto blanco -->
+    <!-- Regla 6: Los elementos con identificador (id) universal tendrán color lightgoldenrodyellow -->
+    <h2 id="universal">The CSS <span>Universal</span> Selector</h2> <!-- Regla 7: Los elementos h2 con clase selector y los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas con valor de 5px -->
+    <p>The universal selector <span>(*)</span> selects all HTML elements on the page.</p>
+
+    <div>
+        <p>Use our <a href="https://www.w3schools.com/cssref/trysel.asp" target="_blank">CSS Selector Tester</a> to demonstrate the different selectors. </p>
+    </div>
+    <hr>
+
+<!-- Regla 11: Los elementos div que sean descendientes de un elemento con id "gallery" tendrán un ancho width de 100% -->
+    <div id="gallery">
+        <div>
+            <h3>CSS Syntax</h3>
+            <!-- Regla 12: Los elementos img tendrán un ancho width de 100%, un border: solid darkcyan 1px; y esquinas redondeadas con valor de 5px -->
+            <img src="./img/regla_css.jpg" alt="regla">
+        </div>
+
+    <div class="tabla-selectores"> <!-- Contenedor general de la tabla -->
+        <h3>All CSS Simple Selectors</h3>
+        <table> <!-- Tabla principal -->
+            <thead> <!-- Encabezados de la tabla -->
+                <tr>
+                    <th>Selector</th><!-- Nombre del tipo de selector -->
+                    <th>Example</th><!-- Ejemplo escrito -->
+                    <th>Example description</th><!-- Explica qué hace -->
+                </tr>
+            </thead>
+
+            <tbody><!-- Cuerpo de la tabla: aquí van las filas -->
+                <tr>
+                    <td>#id</td><!-- Selector de id -->
+                    <td>#firstname</td><!-- Ejemplo de id -->
+                    <td>Selects the element with id="firstname"</td><!-- Explica su función -->
+                </tr>
+
+                <tr>
+                    <td>.class</td><!-- Selector de clase -->
+                    <td>.intro</td><!-- Ejemplo de clase -->
+                    <td>Selects all elements with class="intro"</td><!-- Explicación -->
+                </tr>
+
+                <tr>
+                    <td>element.class</td><!-- Elemento que usa clase -->
+                    <td>p.intro</td><!-- Ejemplo de <p> con clase -->
+                    <td>Selects only &lt;p&gt; elements with class="intro"</td><!-- Qué hace -->
+                </tr>
+
+                <tr>
+                    <td>*</td><!-- Selector universal -->
+                    <td>*</td><!-- Mismo símbolo como ejemplo -->
+                    <td>Selects all elements</td><!-- Selecciona todo -->
+                </tr>
+
+                <tr>
+                    <td>element</td><!-- Selector por etiqueta -->
+                    <td>p</td><!-- Ejemplo de etiqueta -->
+                    <td>Selects all &lt;p&gt; elements</td><!-- Explicación -->
+                </tr>
+
+                <tr>
+                    <td>element,element,...</td><!-- Selector múltiple -->
+                    <td>div, p</td><!-- Ejemplo seleccionando dos etiquetas -->
+                    <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td><!-- Explicación -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

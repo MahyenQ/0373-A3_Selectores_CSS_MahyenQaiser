@@ -1,0 +1,96 @@
+* { /* Regla 1: Utilizar el selector universal * para cambiar el tipo de fuente del documento */
+    font-family: 'Open Sans', sans-serif; /* Establece la fuente de toda la pagina*/
+    box-sizing: border-box; /* Hace que el ancho y alto de los elementos incluyan padding y borde */
+}
+
+body { /* Regla 2: El elemento body tendrá margen 0 y relleno de 20% únicamente a la derecha y izquierda */
+    margin: 0; 
+    padding: 0 20%; 
+}
+
+h1 { /* Regla 3: Los elementos h1 estarán subrayados (text-decoration: underline;), de color darkcyan y alineados al centro */
+    text-decoration: underline;
+    color: darkcyan; /* el titulo CSS Selectors */
+    text-align: center; /*alineados al centro*/
+}
+
+.selector { /* Regla 4: Los elementos con clase selector tendrán color lightcyan */
+    color: lightcyan; /* color de los titulos principales que son "The CSS element Selector" , "The CSS id Selector" , "The CSS class Selector" */
+}
+
+.selectors { /* Regla 5: Los elementos con clase selectors tendrán un relleno de 5%, un border: solid darkcyan 1px; y esquinas redondeadas border-radius con valor de 5px */
+    /* este en el cuadro */
+    padding: 5%;
+    border: solid darkcyan 1px;
+    border-radius: 5px;
+}
+
+#universal { /* Regla 6: Los elementos con identificador (id) universal tendrán color lightgoldenrodyellow*/
+    color: lightgoldenrodyellow; /* color de texto para "The CSS Universal Selector" */
+}
+
+h2.selector, h2#universal { /* Regla 7: Los elementos h2 con clase selector y los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas con valor de 5px */
+    background-color: darkcyan; /*color de fondo de los cuadros de los titulos "The CSS element Selector" , "The CSS id Selector" , "The CSS class Selector" , "The CSS Universal Selector" */
+    padding: 1%;
+    border-radius: 5px;
+}
+
+span { /* Regla 8: Los elementos span tendrán font-weight: 900; color de fondo negro y color de texto blanco */
+    font-weight: 900;
+    background-color: black;
+    color: white;
+}
+
+li > a { /* Regla 9: Los elementos a que sean hijos directos de algún li tendrán text-decoration: none */
+    text-decoration: none; /* basicamente quita los alineados de los enlaces */
+    color: blue; /* es el color de los texto que teiene enlaces */
+}
+
+
+/* esto es para los fondo de los dos ultimos dos cuadros de "CSS Syntax" y "All CSS Simple Selectors" */
+
+h3 { /* Regla 10: Los elementos h3 tendrán background-color: rgba(0, 139, 139, 0.529);, relleno de 0.5px y esquinas redondeadas con valor de 5px */
+    background-color: rgba(0, 139, 139, 0.529);
+    padding: 0.5em; 
+    border-radius: 5px;
+    color: #333; /* Color de texto oscuro para buen contraste */
+}
+
+#gallery div { /* Regla 11: Los elementos div que sean descendientes de un elemento con id "gallery" tendrán un ancho width de 100% */
+    width: 100%;
+}
+
+img { /* Regla 12: Los elementos img tendrán un ancho width de 100%, un border: solid darkcyan 1px; y esquinas redondeadas con valor de 5px */
+    width: 100%;
+    border: solid darkcyan 1px;
+    border-radius: 5px;
+}
+
+
+.tabla-selectores { /* Estilo general para el contenedor de la tabla */
+    width: 80%; /* con width 80% tabla no ocupa toda la pantalla */
+    margin: 20px auto; /* La centra en la página */
+}
+
+table { /* Estilo general de la tabla */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    margin-top: 10px; /* espacio respecto al título */
+    border: 1px solid #cccccc; /* Borde exterior fino */
+    border-radius: 5px;
+    border: solid darkcyan 1px;
+}
+
+th { /* Estilo de las celdas del encabezado */
+    padding: 10px; /* Espacio dentro de las celdas */
+    font-weight: bold; /* Texto más notable */
+}
+
+td { /* Estilo de las celdas normales */
+    border-top: 1px solid #dbd3d3; /* Línea que separa cada fila */
+    padding: 10px; /* Espacio interno */
+}
+
+table td:first-child { /* Aplica estilo solo a la primera columna de la tabla */
+    text-decoration: underline; /* Pone línea debajo */
+    font-style: italic; /* Los hace un poco inclinados */
+}
